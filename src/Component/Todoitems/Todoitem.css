@@ -1,0 +1,38 @@
+.todoitems {
+  margin: 10px 0;
+  padding: 10px;
+
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+
+  width: 40%;
+}
+.todoitem {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #9dceff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.todoitem > button {
+  background: none;
+  border: none;
+
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .todoitems {
+    width: 70%;
+  }
+}
+@media (max-width: 360px) {
+  .todoitem {
+    width: 90%;
+  }
+}
